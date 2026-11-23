@@ -1,0 +1,18 @@
+[Unit]
+Description=Quadruped ROS 2 SLAM stack
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=robot
+WorkingDirectory=/opt/quadruped-slam
+EnvironmentFile=-/opt/quadruped-slam/config/robot.env
+ExecStart=/opt/quadruped-slam/scripts/start.sh
+Restart=on-failure
+RestartSec=3
+KillSignal=SIGINT
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

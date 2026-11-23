@@ -1,0 +1,7 @@
+/build/
+/install/
+/log/
+/src/
+/maps/
+/diagnostics/
+*.db3
