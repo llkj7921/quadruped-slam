@@ -14,7 +14,7 @@ sudo apt-get update
 sudo apt-get install -y python3-rosdep python3-vcstool
 
 mkdir -p "${project_root}/src"
-vcs import "${project_root}/src" < "${project_root}/slam.repos"
+vcs import "${project_root}" < "${project_root}/slam.repos"
 
 if [[ ! -f /etc/ros/rosdep/sources.list.d/20-default.list ]]; then
   sudo rosdep init
