@@ -2,12 +2,12 @@ repositories:
   src/KISS-Matcher:
     type: git
     url: https://github.com/llkj7921/quadruped-kiss-matcher-sam.git
-    version: d706c33e4755b8acdc6077396229cd70e1117c56
+    version: 85f9382b7953040818a9936896bb65ac7b4a6995
   src/spark-fast-lio:
     type: git
     url: https://github.com/llkj7921/quadruped-spark-fast-lio.git
-    version: 9b29ee9e708725c1fe79bfa5d8504346e3b43d1e
+    version: f628a48898f7aed341defb6e28d06d5223b6d9d1
   src/slam_system_interfaces:
     type: git
     url: https://github.com/llkj7921/slam-system-interfaces.git
-    version: b54542ca3ec1fc7b92ba88a3896599b7d018b33f
+    version: 7ee1eefc04d7b22c517e09ca429cca44ebbc20e7

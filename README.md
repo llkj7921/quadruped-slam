@@ -8,6 +8,20 @@
 
 `slam.repos` 固定经过验证的精确 commit，避免不同机器拉到不兼容版本。
 
+## 当前发布版本
+
+`v0.1.0` 锁定以下兼容版本：
+
+| 组件 | Commit |
+| --- | --- |
+| Quadruped KISS-SAM | `85f9382` |
+| Quadruped SPARK-FAST-LIO | `f628a48` |
+| SLAM system interfaces | `7ee1eef` |
+
+发布记录见 [CHANGELOG.md](CHANGELOG.md)。总仓库脚本和文档采用 MIT
+License；导入组件继续遵循各自许可证，详见
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
 ## 支持环境
 
 - Ubuntu 22.04
