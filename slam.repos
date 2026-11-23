@@ -10,4 +10,4 @@ repositories:
   src/slam_system_interfaces:
     type: git
     url: https://github.com/llkj7921/slam-system-interfaces.git
-    version: 7ee1eefc04d7b22c517e09ca429cca44ebbc20e7
+    version: 1c858d6de58dd800614a0b4d906822546ab7bfb1
