@@ -2,7 +2,7 @@ repositories:
   src/KISS-Matcher:
     type: git
     url: https://github.com/llkj7921/quadruped-kiss-matcher-sam.git
-    version: 85f9382b7953040818a9936896bb65ac7b4a6995
+    version: 5a199b261b02ffcdcb658466993f0661c6d6a413
   src/spark-fast-lio:
     type: git
     url: https://github.com/llkj7921/quadruped-spark-fast-lio.git

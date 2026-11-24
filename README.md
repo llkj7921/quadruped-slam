@@ -10,11 +10,11 @@
 
 ## 当前发布版本
 
-`v0.1.1` 锁定以下兼容版本：
+`v0.2.0` 锁定以下兼容版本：
 
 | 组件 | Commit |
 | --- | --- |
-| Quadruped KISS-SAM | `85f9382` |
+| Quadruped KISS-SAM | `5a199b2` (`quadruped-v0.2.0`) |
 | Quadruped SPARK-FAST-LIO | `f628a48` |
 | SLAM system interfaces | `1c858d6` (`v0.1.1`) |
 
@@ -85,6 +85,29 @@ source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 topic echo /recovery/state
 ```
+
+## 建图后离线清理动态点
+
+完成建图并正常退出模式后运行：
+
+```bash
+./scripts/clean_map.sh /absolute/path/to/map_product \
+  --observation-voxel 0.30 \
+  --output-voxel 0.10 \
+  --min-observations 3 \
+  --min-duration 0.5
+```
+
+默认在 session 目录中新增：
+
+```text
+clean_map.pcd
+clean_map_report.yaml
+```
+
+原始 `final_map.pcd` 和 `keyframes/` 不会被覆盖。该工具根据不同关键帧的
+观测次数和持续时间删除短暂体素，适合清理行人拖影；长时间静止的人仍可能被
+保留，地图边界如果只被少量关键帧看到也可能被删除。使用前应对比原图与清理图。
 
 ## 恢复权限
 
